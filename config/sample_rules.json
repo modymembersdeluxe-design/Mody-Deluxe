@@ -1,0 +1,33 @@
+{
+  "global": {
+    "workdir": "output",
+    "temp_prefix": "tmp_",
+    "assets_dir": "assets"
+  },
+  "preprocessing": {
+    "target_width": 1280,
+    "target_height": 720,
+    "target_fps": 30,
+    "normalize_all": true
+  },
+  "operations": [
+    {
+      "type": "stutter",
+      "input": "output/normalized/input_norm.mp4",
+      "start": 2.0,
+      "duration": 0.25,
+      "repeats": 8,
+      "output": "output/stutter_loop.mp4"
+    },
+    {
+      "type": "overlay",
+      "input": "output/normalized/input_norm.mp4",
+      "overlay": "assets/logo.gif",
+      "start": 0.0,
+      "end": 9999.0,
+      "overlay_scale": 0.18,
+      "position": "topright",
+      "output": "output/overlayed.mp4"
+    }
+  ]
+}
