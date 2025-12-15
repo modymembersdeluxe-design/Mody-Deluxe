@@ -1,4 +1,3 @@
-```markdown
 # Mody+ Deluxe — Automatic Remix Orchestrator (v1.0)
 
 Mody+ Deluxe is a C++ orchestration tool that uses FFmpeg to create YTP / YTPMV‑style remixes, stutters, overlays, pitch shifts, randomized edits, and other chaotic effects for the "Mody+" concept project. This README is a step‑by‑step tutorial describing how to build, run, and produce videos with Mody+ Deluxe on Windows 8.1 using Visual Studio Code + CMake.
